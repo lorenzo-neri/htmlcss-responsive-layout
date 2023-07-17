@@ -22,7 +22,7 @@ body {
 }
 
 [class^='col-'] {
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
 }
 
 .col-4 {
@@ -69,7 +69,7 @@ body {
     text-align: center;
 }
 
-/*************************** #region Moibile First ***************************/
+/*************************** #region Debug ***************************/
 .debug section {
     background-color: lightblue;
     border: 1px dashed grey;
@@ -148,13 +148,16 @@ header nav>.desktop_menu {
     background-size: cover;
     background-position: center;
 }
-.purple_box>.NAT_img{
+
+.purple_box>.NAT_img {
     background-image: url(../img/testimonial1.jpg);
 }
-.purple_box>.CELIA_img{
+
+.purple_box>.CELIA_img {
     background-image: url(../img/testimonial2.jpg);
 }
-.purple_box>.BOB_img{
+
+.purple_box>.BOB_img {
     background-image: url(../img/testimonial3.jpg);
 }
 
@@ -199,6 +202,8 @@ header nav>.desktop_menu {
     }
 
 
+
+
 }
 
 /*************************** Desktop ***************************/
@@ -234,6 +239,10 @@ header nav>.desktop_menu {
 
     .white_card>img {
         width: 100%;
+    }
+
+    .col-l-4 {
+        width: calc(100% / 12 * 4);
     }
 }
 
