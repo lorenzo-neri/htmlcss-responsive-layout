@@ -1,159 +1,169 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'PT Sans', sans-serif;
 }
 
 /*************************** Utilities ***************************/
-.container
-{
-	max-width: 1152px;
-	width: 90%;
-	margin: auto;
+.container {
+    max-width: 1152px;
+    width: 90%;
+    margin: auto;
 }
 
-.row
-{
-	display: flex;
-	flex-wrap: wrap;
-	/* margin: 0 -1rem; */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0 -1rem; */
 }
 
-[class^='col-']
-{
-	padding: 0 1rem;
+[class^='col-'] {
+    padding: 0 1rem;
 }
 
-.col-4
-{
-	width: calc(100% / 12 * 4);
+.col-4 {
+    width: calc(100% / 12 * 4);
 }
 
-.col-6
-{
-	width: calc(100% / 12 * 6);
+.col-6 {
+    width: calc(100% / 12 * 6);
 }
 
-.col-8
-{
-	width: calc(100% / 12 * 8);
+.col-8 {
+    width: calc(100% / 12 * 8);
 }
 
-.col-12
-{
-	width: 100%;
+.col-12 {
+    width: 100%;
 }
 
-.d-none
-{
-	display: none;
+.d-none {
+    display: none;
 }
 
-.d-block
-{
-	display: block;
+.d-block {
+    display: block;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.jc-center{
+.jc-center {
     justify-content: center;
 }
 
-.flex-column{
+.flex-column {
     flex-direction: column;
 }
 
-.wrap{
+.wrap {
     flex-wrap: wrap;
 }
 
-.ta-center{
+.ta-center {
     text-align: center;
 }
 
 /*************************** #region Moibile First ***************************/
-.debug section{
+.debug section {
     background-color: lightblue;
     border: 1px dashed grey;
 }
-.debug .container{
+
+.debug .container {
     background-color: lightcoral;
     border: 1px dashed grey;
 }
-.debug .row{
+
+.debug .row {
     background-color: lightcyan;
     border: 1px dashed grey;
 }
-.debug [class^='col-']{
+
+.debug [class^='col-'] {
     background-color: lightgreen;
     border: 1px dashed grey;
 }
-.debug .card{
+
+.debug .card {
     background-color: lightsalmon;
     border: 1px dashed grey;
 }
 
 /*************************** Moibile First ***************************/
 /* header */
-header
-{
+header {
     background-color: var(--rw-heanvenly);
 }
-header nav
-{
+
+header nav {
     display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
     color: var(--rw-secondary);
 }
-header nav > .desktop_menu
-{
+
+header nav>.desktop_menu {
     display: none;
 }
 
 /* main */
-.card{
+.card {
     margin: 1rem 0;
     /* padding: 1rem; */
 }
-.card_section_two>img{
+
+.card_section_two>img {
     width: 100%;
     margin-bottom: -.3rem;
 }
 
 .col-12>img,
-.white_card>img{
+.white_card>img {
     width: 100%;
 }
-.white_card>p{
+
+.white_card>p {
     font-style: italic;
 }
 
-.purple_box{
+.purple_box {
     text-align: center;
     flex-direction: column;
     align-items: center;
 }
-.purple_box>.testimonial_img{
+
+.purple_box>.NAT_img,
+.purple_box>.CELIA_img,
+.purple_box>.BOB_img {
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
-    background-image: url(../img/testimonial1.jpg);
     background-size: cover;
     background-position: center;
 }
+.purple_box>.NAT_img{
+    background-image: url(../img/testimonial1.jpg);
+}
+.purple_box>.CELIA_img{
+    background-image: url(../img/testimonial2.jpg);
+}
+.purple_box>.BOB_img{
+    background-image: url(../img/testimonial3.jpg);
+}
+
+
 
 /*************************** Tablet ***************************/
-@media screen and (min-width: 768px)
-{   /** .d-md-none
+@media screen and (min-width: 768px) {
+
+    /** .d-md-none
 	{
 		display: none;
 	}
@@ -161,57 +171,68 @@ header nav > .desktop_menu
 	{
 		display: block;
 	} **/
-	.col-md-4
-	{
-		width: calc(100% / 12 * 4);
-	}
-	.col-md-6
-	{
-		width: calc(100% / 12 * 6);
-	}
-	.col-md-8
-	{
-		width: calc(100% / 12 * 8);
-	}
-    .card_section_two>img{
+    .col-md-4 {
+        width: calc(100% / 12 * 4);
+    }
+
+    .col-md-6 {
+        width: calc(100% / 12 * 6);
+    }
+
+    .col-md-8 {
+        width: calc(100% / 12 * 8);
+    }
+
+    .card_section_two>img {
         width: 70%;
         margin-bottom: -.3rem;
     }
 
-    
+    .purple_box {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .testimonial_text {
+        width: 65%;
+    }
+
 
 }
 
 /*************************** Desktop ***************************/
-@media screen and (min-width: 1200px)
-{
-    .container{
+@media screen and (min-width: 1200px) {
+    .container {
         width: 80%;
     }
-	header nav > .mobile_menu
-	{
-		display: none;
-	}
-	header nav > .desktop_menu
-	{
-		display: block;
-	}
 
-    .col-12.col-md-8 > .card{
+    header nav>.mobile_menu {
+        display: none;
+    }
+
+    header nav>.desktop_menu {
+        display: block;
+    }
+
+    .col-12.col-md-8>.card {
         display: flex;
     }
 
-    #strategic_planning>.container>div.row{
+    #strategic_planning>.container>div.row {
         flex-direction: row;
     }
-    .col-l-6{
-		width: calc(100% / 12 * 6);
+
+    .col-l-6 {
+        width: calc(100% / 12 * 6);
     }
-    .white_card{
+
+    .white_card {
         width: 60%;
         align-self: flex-end;
     }
-    .white_card>img{
+
+    .white_card>img {
         width: 100%;
     }
 }
@@ -232,7 +253,7 @@ header nav > .desktop_menu
 
 
 /*************************** Colors ***************************/
-:root{
+:root {
     --rw-primary: #9792E4;
     --rw-secondary: #FFFFFF;
     --rw-heanvenly: #0084FD;
