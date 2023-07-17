@@ -74,6 +74,10 @@ body{
     text-align: center;
 }
 
+.p-relative{
+    position: relative;
+}
+
 /*************************** Moibile First ***************************/
 .debug section{
     background-color: lightblue;
@@ -147,21 +151,20 @@ header nav > .desktop_menu
 	{
 		width: calc(100% / 12 * 4);
 	}
-
 	.col-md-6
 	{
 		width: calc(100% / 12 * 6);
 	}
-
 	.col-md-8
 	{
 		width: calc(100% / 12 * 8);
 	}
-
     .card_section_two>img{
         width: 70%;
         margin-bottom: -.3rem;
     }
+
+    
 
 }
 
@@ -171,20 +174,29 @@ header nav > .desktop_menu
     .container{
         width: 80%;
     }
-    
 	header nav > .mobile_menu
 	{
 		display: none;
 	}
-
 	header nav > .desktop_menu
 	{
 		display: block;
 	}
 
-
     .col-12.col-md-8 > .card{
         display: flex;
+    }
+
+    #strategic_planning>.container>div.row{
+        flex-direction: row;
+    }
+    .col-l-6{
+		width: calc(100% / 12 * 6);
+    }
+    .col-12.ta-center.col-l-6{
+        position: absolute;
+        bottom: 5rem;
+        right: 5rem;
     }
 }
 
