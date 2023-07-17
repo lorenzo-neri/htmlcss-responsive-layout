@@ -3,3 +3,149 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+/*************************** Utilities ***************************/
+.container
+{
+	max-width: 1152px;
+	width: 80%;
+	margin: auto;
+}
+
+.row
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1rem;
+}
+
+[class^='col-']
+{
+	padding: 0 1rem;
+}
+
+.col-4
+{
+	width: calc(100% / 12 * 4);
+}
+
+.col-6
+{
+	width: calc(100% / 12 * 6);
+}
+
+.col-8
+{
+	width: calc(100% / 12 * 8);
+}
+
+.col-12
+{
+	width: 100%;
+}
+
+.d-none
+{
+	display: none;
+}
+
+.d-block
+{
+	display: block;
+}
+
+/*************************** Moibile First ***************************/
+header
+{
+	background-color: blue;
+}
+
+header nav
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+header nav > .desktop_menu
+{
+	display: none;
+}
+
+/*************************** Tablet ***************************/
+@media screen and (min-width: 768px)
+{
+	.d-md-none
+	{
+		display: none;
+	}
+
+	.d-md-block
+	{
+		display: block;
+	}
+
+	.col-md-4
+	{
+		width: calc(100% / 12 * 4);
+	}
+
+	.col-md-6
+	{
+		width: calc(100% / 12 * 6);
+	}
+
+	.col-md-8
+	{
+		width: calc(100% / 12 * 8);
+	}
+
+	.col-md-12
+	{
+		width: 100%;
+	}
+}
+
+/*************************** Desktop ***************************/
+@media screen and (min-width: 1200px)
+{
+	header nav > .mobile_menu
+	{
+		display: none;
+	}
+
+	header nav > .desktop_menu
+	{
+		display: block;
+	}
+}
+
+
+/* @media screen and (min-width: 1440px)
+{
+	.container
+	{
+		max-width: 1400px;
+	}
+
+	.d-lg-block
+	{
+		display: block;
+	}
+} */
+
+
+/*************************** Colors ***************************/
+:root{
+    --rw-primary: #9792E4;
+    --rw-secondary: #FFFFFF;
+    --rw-heanvenly: #0084FD;
+    --rw-light-heanvenly: #B5DDFF;
+    --rw-special: #FDC15F;
+    --rw-footer: #333333;
+}
