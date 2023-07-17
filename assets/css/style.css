@@ -129,11 +129,26 @@ header nav > .desktop_menu
     margin-bottom: -.3rem;
 }
 
-.col-12>img{
+.col-12>img,
+.white_card>img{
     width: 100%;
 }
-.cursive{
+.white_card>p{
     font-style: italic;
+}
+
+.purple_box{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.purple_box>.testimonial_img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-image: url(../img/testimonial1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 /*************************** Tablet ***************************/
