@@ -237,15 +237,31 @@ header nav>.desktop_menu {
     .container {
         width: 80%;
     }
-
+    
     header nav>.mobile_menu {
         display: none;
     }
-
+    
     header nav>.desktop_menu {
-        display: block;
+        display: flex;
+        gap: 1.5rem;
     }
-
+    
+    header nav>.desktop_menu>a:not(.header_button) {
+        text-decoration: none;
+        color: var(--rw-secondary);
+        font-weight: 100;
+        margin: 0.5rem;
+    }
+    
+    header nav>.desktop_menu>.header_button {
+        text-decoration: none;
+        color: black;
+        background-color: var(--rw-secondary);
+        border-radius: 30px;
+        padding: 0.5rem 1rem;
+    }
+    
     .col-12.col-md-8>.card {
         display: flex;
     }
