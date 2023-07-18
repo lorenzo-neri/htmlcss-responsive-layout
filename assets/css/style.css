@@ -186,7 +186,7 @@ header nav>.desktop_menu {
 
 #strategic_planning>.container>.row>.col-12>h3 {
     color: var(--rw-secondary);
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 2rem 0;
 }
 
@@ -317,6 +317,7 @@ header nav>.desktop_menu {
 .benefits_card>p{
     line-height: 1.8rem;
     padding-bottom: 2rem;
+    color: var(--rw-secondary-font);
 }
 
 .benefits_card>a{
@@ -329,6 +330,24 @@ header nav>.desktop_menu {
 }
 /* /#benefits */
 
+#about_us{
+   margin: 0 2rem;
+   margin-bottom: 3rem; 
+}
+
+#about_us>.container>.row>.col-12{
+    padding: 1.5rem;
+}
+
+#about_us>.container>.row>.col-12>h2{
+    color: var(--rw-primary);
+    font-size: 3rem;
+}
+
+#about_us>.container>.row>.col-12>p{
+    line-height: 2rem;
+}
+
 #about_us>.container>.row>.col-12>.about-us_img {
     height: 9rem;
     width: 9rem;
@@ -340,12 +359,85 @@ header nav>.desktop_menu {
 
 #about_us>.container>.row>.col-12>.fa-solid.fa-quote-left {
     position: absolute;
-    left: 7rem;
-    top: 1.5rem;
+    left: 8.5rem;
+    top: 2rem;
     scale: 1.5;
+    color: var(--rw-primary);
 }
 
+#about_us>.container>.row>.col-12>h3{
+    color: var(--rw-primary);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    padding-bottom: 1.5rem;
+}
 
+#about_us>.container>.row>.col-12>a{
+    text-decoration: none;
+    color: var(--rw-secondary);
+    background-color: var(--rw-primary);
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    font-size: .8rem;
+}
+/* /#about_us */
+
+#get_started{
+    background-color: var(--rw-primary);
+    padding: 3rem 4rem;
+    color: var(--rw-secondary);
+}
+
+#get_started>.container>.row>.col-12>h2{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+
+#get_started>.container>.row>.col-12>div{
+    color: var(--rw-special);
+    font-size: 4rem;
+    font-weight: 800;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+}
+
+#get_started>.container>.row>.col-12>p{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+#get_started>.container>.row>.col-12>a{
+    text-decoration: none;
+    color: var(--rw-primary);
+    letter-spacing: 5px;
+    background-color: var(--rw-secondary);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+}
+
+#privacy{
+    padding-top: 2rem;
+    display: block;
+}
+/* /#get_started */
+
+footer{
+    background-color: var(--rw-footer);
+    color: var(--rw-secondary);
+}
+
+footer>.container{
+    padding: 2rem 4rem;
+}
+
+footer>.container>p{
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+}
+
+footer>.container>div>a{
+    color: var(--rw-primary);
+}
 
 /*************************** Tablet ***************************/
 @media screen and (min-width: 768px) {
