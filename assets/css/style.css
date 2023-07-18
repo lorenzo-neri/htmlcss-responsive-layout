@@ -123,9 +123,22 @@ header nav>.desktop_menu {
     /* padding: 1rem; */
 }
 
+#services>.container>.row>.col-12>.card{
+    background-color: var(--rw-light-heanvenly);
+    border-radius: 30px;
+    flex-direction: column;
+}
+
+.card_section_one{
+    padding: 2.5rem;  
+}
+
+.card_section_two{
+    justify-self:  flex-end;
+}
+
 .card_section_two>img {
     width: 100%;
-    margin-bottom: -.3rem;
 }
 
 .col-12>img,
@@ -208,7 +221,6 @@ header nav>.desktop_menu {
 
     .card_section_two>img {
         width: 70%;
-        margin-bottom: -.3rem;
     }
 
     .purple_box {
