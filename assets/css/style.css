@@ -21,9 +21,9 @@ body {
     /* margin: 0 -1rem; */
 }
 
-[class^='col-'] {
-    /* padding: 0 1rem; */
-}
+/* [class^='col-'] {
+    padding: 0 1rem;
+} */
 
 .col-4 {
     width: calc(100% / 12 * 4);
@@ -419,6 +419,10 @@ header nav>.desktop_menu {
     padding-top: 2rem;
     display: block;
 }
+
+#privacy>a{
+    color: var(--rw-secondary);
+}
 /* /#get_started */
 
 footer{
@@ -513,14 +517,26 @@ footer>.container>div>a{
         color: var(--rw-secondary);
         font-weight: 100;
         margin: 0.5rem;
+        transition: .3s;
+    }
+    
+    header nav>.desktop_menu>a:not(.header_button):hover{
+        color: var(--rw-special);
     }
 
-    header nav>.desktop_menu>.header_button {
+    .header_button {
         text-decoration: none;
         color: black;
         background-color: var(--rw-secondary);
         border-radius: 30px;
         padding: 0.5rem 1rem;
+        transition: .5s;
+    }
+
+    .header_button:hover {
+        background-color: var(--rw-primary);
+        color: var(--rw-special);
+        padding: 0.5rem 3rem;
     }
 
     .col-12.col-md-8>.card {
