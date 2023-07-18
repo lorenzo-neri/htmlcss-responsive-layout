@@ -69,6 +69,10 @@ body {
     text-align: center;
 }
 
+.p-relative{
+    position: relative;
+}
+
 /*************************** #region Debug ***************************/
 .debug section {
     background-color: lightblue;
@@ -159,6 +163,22 @@ header nav>.desktop_menu {
 
 .purple_box>.BOB_img {
     background-image: url(../img/testimonial3.jpg);
+}
+
+#about_us>.container>.row>.col-12>.about-us_img{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/about.jpg);
+}
+
+#about_us>.container>.row>.col-12>.fa-solid.fa-quote-left{
+    position: absolute;
+    left: 7rem;
+    top: 1.5rem;
+    scale: 1.5;
 }
 
 
