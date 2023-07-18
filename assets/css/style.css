@@ -73,9 +73,9 @@ body {
     position: relative;
 }
 
-.ptl_5{
-    padding-top: 2,5rem;
-    padding-left: 2,5rem;
+.ptl_5 {
+    padding-top: 2, 5rem;
+    padding-left: 2, 5rem;
 }
 
 /*************************** #region Debug ***************************/
@@ -132,10 +132,10 @@ header nav>.desktop_menu {
     background-color: var(--rw-light-heanvenly);
     border-radius: 30px;
     margin: 1rem;
-    
+
 }
 
-.card_section_one.main{
+.card_section_one.main {
     padding-top: 2.5rem;
     padding-left: 2.5rem;
 }
@@ -171,24 +171,26 @@ header nav>.desktop_menu {
     padding: 3rem 0;
 }
 
-.card_section_two>p{
+.card_section_two>p {
     padding: 2rem;
     color: var(--rw-secondary-font);
 }
+
 /* /#services */
 
-#strategic_planning{
+#strategic_planning {
     background-color: var(--rw-primary);
     margin: 3rem 0;
     padding: 4rem 2rem;
 }
 
-#strategic_planning>.container>.row>.col-12>h3{
+#strategic_planning>.container>.row>.col-12>h3 {
     color: var(--rw-secondary);
     font-size: 2rem;
     padding: 2rem 0;
 }
-#strategic_planning>.container>.row>.col-12>p{
+
+#strategic_planning>.container>.row>.col-12>p {
     color: var(--rw-secondary);
     padding-bottom: 2rem;
 }
@@ -198,14 +200,14 @@ header nav>.desktop_menu {
     width: 100%;
 }
 
-.white_card{
+.white_card {
     background-color: var(--rw-secondary);
     border-radius: 30px;
     padding: 1rem 1.5rem;
     padding-bottom: 3rem;
 }
 
-.white_card>h4{
+.white_card>h4 {
     padding-top: 1rem;
 }
 
@@ -215,17 +217,47 @@ header nav>.desktop_menu {
     padding-bottom: 3rem;
 }
 
-.white_card>a{
+.white_card>a {
     font-size: 1.5rem;
     background-color: var(--rw-primary);
     padding: 0.8rem 1.3rem;
     border-radius: 50%;
 }
 
+/* /#strategic_planning */
+
+#testimonials {
+    margin: 4rem 0;
+}
+
+#testimonials>.container{
+    padding: 1rem;
+}
+
+#testimonials>.container>.row>.col-12>div {
+    padding: 1rem 0;
+}
+
+#testimonials>.container>.row>.col-12>h2 {
+    color: var(--rw-primary);
+    font-size: 2.5rem;
+}
+
+#testimonials>.container>.row>.col-12>p{
+    padding: 1.5rem 0;
+    line-height: 1.8rem;
+}
+
 .purple_box {
     text-align: center;
     flex-direction: column;
     align-items: center;
+    background-color: var(--rw-primary);
+    color: var(--rw-secondary);
+    padding: 1rem;
+    border-radius: 50px;
+    margin: 1rem 0;
+    line-height: 2rem;
 }
 
 .purple_box>.NAT_img,
@@ -249,6 +281,8 @@ header nav>.desktop_menu {
 .purple_box>.BOB_img {
     background-image: url(../img/testimonial3.jpg);
 }
+
+/* /#testimonials */
 
 #about_us>.container>.row>.col-12>.about-us_img {
     height: 9rem;
@@ -291,13 +325,13 @@ header nav>.desktop_menu {
         width: calc(100% / 12 * 8);
     }
 
-    #services>.container>.row>.col-12>.card{
+    #services>.container>.row>.col-12>.card {
         height: 100%;
         margin: 0 1rem;
     }
 
     #services>.container>.row>.col-md-4,
-    #services>.container>.row>.col-md-8{
+    #services>.container>.row>.col-md-8 {
         margin: 1rem 0;
     }
 
