@@ -69,7 +69,7 @@ body {
     text-align: center;
 }
 
-.p-relative{
+.p-relative {
     position: relative;
 }
 
@@ -165,7 +165,7 @@ header nav>.desktop_menu {
     background-image: url(../img/testimonial3.jpg);
 }
 
-#about_us>.container>.row>.col-12>.about-us_img{
+#about_us>.container>.row>.col-12>.about-us_img {
     height: 9rem;
     width: 9rem;
     border-radius: 50%;
@@ -174,7 +174,7 @@ header nav>.desktop_menu {
     background-image: url(../img/about.jpg);
 }
 
-#about_us>.container>.row>.col-12>.fa-solid.fa-quote-left{
+#about_us>.container>.row>.col-12>.fa-solid.fa-quote-left {
     position: absolute;
     left: 7rem;
     top: 1.5rem;
@@ -221,6 +221,12 @@ header nav>.desktop_menu {
         width: 65%;
     }
 
+    #get_started>.container,
+    footer>.container {
+        max-width: 900px;
+        width: 80%;
+        margin: auto;
+    }
 
 
 
